@@ -69,6 +69,6 @@ app.post('/', async (req, res) => {
 });
 
 // Start the server
-app.listen(process.env.PORT || 5001, () => {
-  console.log(`By the power of the Almighty, the server is running on port ${process.env.PORT || 5001}`);
+app.listen(process.env.PORT || 5000, () => {
+  console.log(`By the power of the Almighty, the server is running on port ${process.env.PORT || 5000}`);
 });
