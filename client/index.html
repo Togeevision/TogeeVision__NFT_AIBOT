@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TogeeVision AI Exploration</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header_container">
+      <header>
+        <h1>TogeeVision NFT Exploration</h1>
+      </header>
+    
+      <div id="welcome_message">
+        Greetings and salutations, dear traveler! I am TogeeVision, your wise guide to the fascinating world of NFTs. Choose a message below, or type in your own question. If I am taking too long to answer, click on the STOP button to interrupt me.
+      </div>
+      <div id="topic_buttons">
+        <button class="topic_button" data-topic="What is an NFT?">What is an NFT?</button>
+        <button class="topic_button" data-topic="How to create an NFT?">How to create an NFT?</button>
+        <button class="topic_button" data-topic="What are the benefits of NFTs?">Benefits of NFTs</button>
+        <button class="topic_button" data-topic="What are the unique properties of NFTs?">Why are they so special?</button>
+      </div>
+      <!-- Add this line inside the element -->
+        <button id="interrupt_button"> STOP </button>
+    </div>
+    
+    <div id="app">
+    
+      <section id="chat_container">
+      
+      
+        <div id="response_container"></div>
+      </section>
+    
+      <form id="chat_form">
+        <label for="input-prompt">Your Question:</label>
+        <textarea id="input-prompt" name="prompt" rows="1" cols="1" placeholder="Ask TogeeVision..." required></textarea>
+        <button type="submit"><img src="assets/send.svg"></button>
+      </form>
+      <section id="user_info">
+        <div class="user_input">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="user_input">
+          <label for="birthdate">Birthdate:</label>
+          <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+      </section> 
+    </div>
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>

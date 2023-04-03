@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+header img {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  max-width: 60px;
+  max-height: 60px;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+body {
+  background: linear-gradient(120deg, #e5eafc 0%, #a6c1ee 100%);
+  padding: 1.5rem;
+  color: #090e3b;
+}
+
+/* Container for the main content */
+#app {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: calc(1.5rem + 6rem); /* Adjust based on the height of your fixed header */
+}
+
+#user_input_window {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+
+
+header {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  background: #022a3a;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 15px;
+  margin: 0 auto 1.5rem auto;
+}
+
+
+header h1 {
+  color: #b6e3f8;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#welcome_message {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom: 1.3rem;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#topic_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+#interrupt_button {
+  background-color: #ff4d4d; /* cautious red */
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem; /* increased padding */
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* to center the button on the page */
+  transform: scale(0.8); /* scale down the button by 80% */
+}
+
+
+
+
+.topic_button {
+  background-color: #0d5896;
+  color: #f8f8f8;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.topic_button:hover {
+  background-color: #e2a600;
+}
+
+#user_info {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.user_input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input[type="text"],
+input[type="date"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+#header_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(190, 242, 255, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+#chat_container {
+  background-color: #ecf0f1;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 1rem;
+  flex-grow: 1;
+  overflow-y: scroll;
+  margin-bottom: 1rem;
+}
+
+#response_container {
+  display: flex;
+  scroll-behavior: smooth;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#chat_form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+button[type="submit"] {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+button[type="submit"]:hover img {
+  opacity: 0.7;
+}
+
+button[type="submit"] img {
+  width: 32px;
+  height: 32px;
+  transition: opacity 0.3s;
+}
+button[type="submit"] {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+button[type="submit"]:hover img {
+  opacity: 0.7;
+}
+
+button[type="submit"] img {
+  width: 32px;
+  height: 32px;
+  transition: opacity 0.3s;
+}
